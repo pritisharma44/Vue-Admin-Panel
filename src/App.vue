@@ -1,13 +1,9 @@
 <template>
   <div id="app" class="d-flex">
-    <!-- Sidebar (fixed) -->
     <SideBar />
-
-    <!-- Main content wrapper -->
     <div class="main-content w-100">
       <HeaderBar /> <!-- Header now part of the main content -->
       <div class="p-3">
-        <!-- Main page content rendered here -->
         <router-view />
       </div>
     </div>

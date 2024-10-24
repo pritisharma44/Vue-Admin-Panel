@@ -1,8 +1,7 @@
 <template>
-  <header class="navbar navbar-light bg-light">
+  <header class="navbar navbar-light bg-light header-bar">
     <div class="container-fluid d-flex justify-content-between align-items-center">
       <div class="navbar-brand d-flex align-items-center">
-        <!-- <img src="/path-to-logo.png" alt="Logo" class="logo" /> -->
         <span class="ms-2">Admin Panel</span>
       </div>
       <div class="profile">
@@ -25,9 +24,18 @@ export default {
 
 .navbar {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; 
+  margin-left: 20px; 
+  margin-top: 10px;
+  height: 60px;
+
 }
 
 .profile img {
-  border-radius: 50%;
+  border-radius: 50%; 
+}
+
+.header-bar {
+  padding: 10px; 
 }
 </style>
