@@ -1,8 +1,8 @@
 <template>
   <div id="app" class="d-flex">
-    <SideBar />
-    <div class="main-content w-100">
-      <HeaderBar /> <!-- Header now part of the main content -->
+    <SideBar v-if="showLayout" />
+    <div class="main-content w-100" :class="{'with-sidebar': showLayout}">
+      <HeaderBar v-if="showLayout" />
       <div class="p-3">
         <router-view />
       </div>
@@ -20,11 +20,15 @@ export default {
     HeaderBar,
     SideBar,
   },
+  computed: {
+    showLayout() {
+      return this.$route.path !== '/login';
+    }
+  }
 };
 </script>
 
 <style>
-/* Ensure the sidebar is fixed and occupies only part of the screen */
 html, body {
   height: 100%;
   margin: 0;

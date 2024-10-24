@@ -7,6 +7,7 @@ const routes = [
     path: '/login',
     name: 'LoginPage',
     component: LoginPage,
+    
   },
   {
     path: '/dashboard',
