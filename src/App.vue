@@ -1,11 +1,15 @@
 <template>
-  <div id="app">
-    <HeaderBar />
-    <div class="d-flex">
-      <SideBar />
-      <main class="flex-grow-1 p-3">
+  <div id="app" class="d-flex">
+    <!-- Sidebar (fixed) -->
+    <SideBar />
+
+    <!-- Main content wrapper -->
+    <div class="main-content w-100">
+      <HeaderBar /> <!-- Header now part of the main content -->
+      <div class="p-3">
+        <!-- Main page content rendered here -->
         <router-view />
-      </main>
+      </div>
     </div>
   </div>
 </template>
@@ -24,7 +28,7 @@ export default {
 </script>
 
 <style>
-/* Global styles */
+/* Ensure the sidebar is fixed and occupies only part of the screen */
 html, body {
   height: 100%;
   margin: 0;
@@ -35,19 +39,26 @@ html, body {
   height: 100%;
 }
 
-main {
-  margin-left: 250px; /* Ensure content shifts after sidebar */
-  background-color: #f8f9fa;
-  padding: 20px;
+.main-content {
+  margin-left: 250px; /* Width of the sidebar */
 }
 
 .sidebar {
   width: 250px;
-  height: 100vh;
+  position: fixed;
+  height: 100%;
   background-color: #f8f9fa;
 }
 
-.content {
-  padding-top: 70px;
+header {
+  height: 56px; /* Header height */
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+main {
+  padding-top: 70px; /* Ensure content starts after the header */
+  background-color: #f8f9fa;
 }
 </style>

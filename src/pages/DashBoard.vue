@@ -6,10 +6,10 @@
         <div class="card">
           <div class="card-body d-flex align-items-center justify-content-between">
             <div>
-              <h5>Service Engineers</h5>
+              <h5>Total Users</h5>
               <h3>5</h3>
             </div>
-            <img src="/path-to-icon.png" alt="Icon" class="icon">
+            <img src="../assets/logo.png" alt="Icon" class="icon">
           </div>
         </div>
       </div>
@@ -17,10 +17,10 @@
         <div class="card">
           <div class="card-body d-flex align-items-center justify-content-between">
             <div>
-              <h5>Customers</h5>
+              <h5>Total Products</h5>
               <h3>9</h3>
             </div>
-            <img src="/path-to-icon.png" alt="Icon" class="icon">
+            <img src="../assets/logo.png" alt="Icon" class="icon">
           </div>
         </div>
       </div>

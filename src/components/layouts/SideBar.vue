@@ -1,5 +1,5 @@
 <template>
-  <nav class="sidebar bg-light border-end">
+  <nav class="sidebar bg-light">
     <ul class="nav flex-column">
       <li class="nav-item">
         <router-link class="nav-link d-flex align-items-center" to="/dashboard">
@@ -7,11 +7,11 @@
           <span class="ms-2">Dashboard</span>
         </router-link>
       </li>
-      <!-- Add more items as needed -->
+      <!-- More items -->
       <li class="nav-item">
-        <router-link class="nav-link d-flex align-items-center" to="/customer-management">
-          <i class="bi bi-people"></i>
-          <span class="ms-2">Customer Management</span>
+        <router-link class="nav-link d-flex align-items-center" to="/users">
+          <i class="bi bi-person"></i>
+          <span class="ms-2">Users</span>
         </router-link>
       </li>
     </ul>
@@ -27,27 +27,20 @@ export default {
 <style scoped>
 .sidebar {
   position: fixed;
-  top: 56px; /* Account for the height of the fixed header */
+  top: 0;
   left: 0;
   width: 250px;
   height: 100vh;
-  padding-top: 20px;
+  padding-top: 60px; /* To leave space under the header */
   background-color: #f8f9fa;
 }
 
 .nav-link {
-  display: flex;
-  align-items: center;
   padding: 10px 15px;
 }
 
 .nav-link:hover {
   background-color: #e9ecef;
-  border-radius: 5px;
-}
-
-.nav-item {
-  margin-bottom: 5px;
 }
 
 .bi {
