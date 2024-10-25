@@ -3,7 +3,7 @@
     <div class="card">
       <div class="card-header d-flex justify-content-between align-items-center">
         <h5 class="mb-0">User List</h5>
-        <button class="btn btn-primary btn-sm">Add</button> 
+        <router-link to="/users/create" class="btn btn-primary btn-sm">Add User</router-link> 
       </div>
       <div class="card-body">
         <table id="usersTable" class="table table-striped table-bordered" style="width:100%">

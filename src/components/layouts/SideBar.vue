@@ -15,11 +15,7 @@
         </li>
         <li class="nav-item">
           <router-link 
-            class="nav-link d-flex align-items-center" 
-            to="/users"
-            active-class="active"
-            exact-active-class="active"
-          >
+            class="nav-link d-flex align-items-center" to="/users" :class="{ active: isUsersActive }" >
             <i class="bi bi-person"></i>
             <span class="ms-2">Users</span>
           </router-link>
@@ -32,6 +28,11 @@
 <script>
 export default {
   name: 'SideBar',
+  computed: {
+    isUsersActive() {
+      return this.$route.path.startsWith('/users');
+    }
+  }
 };
 </script>
 
