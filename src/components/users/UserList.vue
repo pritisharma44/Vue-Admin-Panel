@@ -1,9 +1,9 @@
 <template>
   <div class="container mt-5">
-    <h2>Users Listing</h2>
     <div class="card">
-      <div class="card-header">
+      <div class="card-header d-flex justify-content-between align-items-center">
         <h5 class="mb-0">User List</h5>
+        <button class="btn btn-primary btn-sm">Add</button> 
       </div>
       <div class="card-body">
         <table id="usersTable" class="table table-striped table-bordered" style="width:100%">

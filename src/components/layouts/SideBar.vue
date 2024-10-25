@@ -63,12 +63,14 @@ export default {
   border-radius: 5px; 
   color: white;
 }
+
 .nav-link.active {
   background-color: #e4626f; 
   font-weight: bold;
   color: white;
   border-radius: 5px; 
 }
+
 .bi {
   font-size: 1.2rem;
 }
