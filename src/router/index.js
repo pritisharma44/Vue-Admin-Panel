@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import LoginPage from '../pages/LoginPage.vue';
 import DashBoard from '../pages/DashBoard.vue';
-
+import UserList from '../components/users/UserList.vue';
 const routes = [
   {
     path: '/login',
@@ -15,6 +15,12 @@ const routes = [
     component: DashBoard,
     meta: { requiresAuth: true },
   },
+  {
+    path: '/users',
+    name: 'UserList',
+    component: UserList,
+    meta: { requiresAuth: true }  // Only show if authenticated
+  }
   // Add more routes as needed
 ];
 

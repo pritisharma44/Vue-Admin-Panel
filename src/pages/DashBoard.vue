@@ -4,23 +4,40 @@
     <div class="row">
       <div class="col-md-4 mb-4">
         <div class="card">
-          <div class="card-body d-flex align-items-center justify-content-between">
+          <div
+            class="card-body d-flex align-items-center justify-content-between"
+          >
             <div>
               <h5>Total Users</h5>
               <h3>5</h3>
             </div>
-            <img src="../assets/logo.png" alt="Icon" class="icon">
+            <img src="../assets/logo.png" alt="Icon" class="icon" />
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
         <div class="card">
-          <div class="card-body d-flex align-items-center justify-content-between">
+          <div
+            class="card-body d-flex align-items-center justify-content-between"
+          >
             <div>
               <h5>Total Products</h5>
               <h3>9</h3>
             </div>
-            <img src="../assets/logo.png" alt="Icon" class="icon">
+            <img src="../assets/logo.png" alt="Icon" class="icon" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div
+            class="card-body d-flex align-items-center justify-content-between"
+          >
+            <div>
+              <h5>Total Products</h5>
+              <h3>9</h3>
+            </div>
+            <img src="../assets/logo.png" alt="Icon" class="icon" />
           </div>
         </div>
       </div>
@@ -31,7 +48,7 @@
 
 <script>
 export default {
-  name: 'DashBoard',
+  name: "DashBoard",
 };
 </script>
 
